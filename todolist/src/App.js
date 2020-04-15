@@ -45,9 +45,11 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
+        <header>
+        <h1>To-Do-List</h1>
+        </header>
         <div>
-          Add an Item...
-          <br/>
+          <h2>Add an Item</h2>
           <input type="text"
           placeholder="Type item here..."
           value={this.state.newItem}
@@ -73,6 +75,8 @@ class App extends React.Component {
           </ul>
 
         </div>
+      
+        
       </div>
     );
   }
